@@ -20,7 +20,7 @@ const Bio = () => {
             flexFlow: "row",
             height: "100%",
             width: "80%",
-            alignItems: "flex-end", 
+            alignItems: "center", 
             padding: "2%"
 
         }}>
@@ -31,7 +31,6 @@ const Bio = () => {
                 }}>
                     <img src={Statue} alt="statue" style={{width: "50%", filter: "drop-shadow(10px 10px 2px grey)"}} />
                 <Card style={{
-                    marginRight: "2%",
                     }}>
                     <Paper elevation={10}>
                         <Card.Body style={{
@@ -58,7 +57,8 @@ const Bio = () => {
                 }}>
                     <img src={Statue} alt="statue" style={{width: "50%", filter: "drop-shadow(10px 10px 2px grey)"}} />
                 <Card style={{
-                    marginRight: "2%",
+                    marginRight: "4%",
+                    marginLeft: "4%",
                     }}>
                     <Paper elevation={10}>
                         <Card.Body style={{
@@ -85,7 +85,6 @@ const Bio = () => {
                 }}>
                     <img src={Statue} alt="statue" style={{width: "50%", filter: "drop-shadow(10px 10px 2px grey)"}} />
                 <Card style={{
-                    marginLeft: "2%",
                     }}>
                     <Paper elevation={10}>
                         <Card.Body style={{

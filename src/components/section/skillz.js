@@ -1,5 +1,5 @@
 import React from 'react'
-import Rubix from '../../images/rubix.png'
+import Motivationz from '../../images/apple.jpg'
 import LooksOneIcon from '@material-ui/icons/LooksOne';
 import LooksTwoIcon from '@material-ui/icons/LooksTwo';
 import LooksThreeIcon from '@material-ui/icons/Looks3';
@@ -20,8 +20,8 @@ const Skillz = () => {
                 padding: "5%",
                 justifyContent: "space-around"
             }}>
-                <img src={Rubix} alt="rubix" style={{
-                    width: "30%", 
+                <img src={Motivationz} alt="motivation" style={{
+                    width: "40%", 
                     filter: "drop-shadow(10px 20px 5px grey)"}} />
                     <hr style={{filter: "drop-shadow(2px 2px 2px black)"}} />
                 <div style={{
