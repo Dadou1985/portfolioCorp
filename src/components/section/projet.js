@@ -5,7 +5,7 @@ import  Money from '../../images/moneyflight.png'
 
 const Projet = () => {
     return (
-        <div style={{
+        <div id="projet" style={{
             display: 'flex',
             flexFlow: "column",
             justifyContent: "space-around",

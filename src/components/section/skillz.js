@@ -1,19 +1,16 @@
 import React from 'react'
 import Motivationz from '../../images/apple.jpg'
-import LooksOneIcon from '@material-ui/icons/LooksOne';
-import LooksTwoIcon from '@material-ui/icons/LooksTwo';
-import LooksThreeIcon from '@material-ui/icons/Looks3';
 
 const Skillz = () => {
     return (
-        <div style={{
+        <div id="skillz" style={{
             display: "flex",
             flexFlow: "column",
             height: "600px",
             padding: "2%",
             justifyContent: "space-around"
         }}>
-            <h1 style={{textAlign: "center", fontSize: "60px", filter: "drop-shadow(5px 5px 2px black)", color: "grey"}}>Le Skills Cube Mindset</h1>
+            <h1 style={{textAlign: "center", fontSize: "60px", filter: "drop-shadow(5px 5px 2px black)", color: "grey"}}>A Nomad's Way of Life</h1>
             <div style={{
                 display: "flex",
                 flexFlow: "row",
@@ -23,7 +20,7 @@ const Skillz = () => {
                 <img src={Motivationz} alt="motivation" style={{
                     width: "40%", 
                     filter: "drop-shadow(10px 20px 5px grey)"}} />
-                    <hr style={{filter: "drop-shadow(2px 2px 2px black)"}} />
+                    <hr />
                 <div style={{
                     display: "flex",
                     flexFlow: "column",
@@ -35,7 +32,6 @@ const Skillz = () => {
                         flexFlow: "row",
                         height: "30%",
                         alignItems: "center"}}>
-                        <LooksOneIcon style={{width: "20%", height: "50%", filter: "drop-shadow(10px 10px 2px black)", color: "darkred"}} />
                         <div style={{
                             display: "flex",
                             flexFlow: "column"
@@ -52,7 +48,6 @@ const Skillz = () => {
                         flexFlow: "row",
                         height: "30%",
                         alignItems: "center"}}>
-                        <LooksTwoIcon style={{width: "20%", height: "50%", filter: "drop-shadow(10px 10px 2px black)", color: "darkred"}} />
                         <div style={{
                             display: "flex",
                             flexFlow: "column"
@@ -68,7 +63,6 @@ const Skillz = () => {
                         flexFlow: "row",
                         height: "30%",
                         alignItems: "center"}}>
-                        <LooksThreeIcon style={{width: "20%", height: "50%", filter: "drop-shadow(10px 10px 2px black)", color: "darkred"}} />
                         <div style={{
                             display: "flex",
                             flexFlow: "column"

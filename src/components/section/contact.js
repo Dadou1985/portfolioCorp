@@ -1,11 +1,48 @@
-import React from 'react'
-import { Button } from '@material-ui/core'
+import React, {useState} from 'react'
+import { Button, Modal } from 'react-bootstrap'
 import Office from '../../images/office.jpg'
+import { makeStyles } from '@material-ui/core/styles'
+import TextField from '@material-ui/core/TextField'
+import { Input } from 'antd'
+import { navigate } from 'gatsby'
 
 
 const Contact = () => {
+
+    const [show, setShow] = useState(false);
+    const [formValue, setFormValue] = useState({nom: "", mail: "", message: ""})
+
+    const useStyles = makeStyles((theme) => ({
+        root: {
+          '& > *': {
+            margin: theme.spacing(1),
+            width: '25ch',
+          },
+        },
+      }))
+
+      const classes = useStyles()
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const handleChange = (event) =>{
+        event.persist()
+        setFormValue(currentValue =>({
+          ...currentValue,
+          [event.target.name]: event.target.value
+        }))
+      }
+
+    const handleLink = () => {
+        return navigate("https://notel-765b1.web.app/")
+    }
+
+    const { TextArea } = Input;
+
+
     return (
-        <div style={{
+        <div id="contact" style={{
             display: "flex",
             flexFlow: "column",
             alignItems: "flex-start",
@@ -23,13 +60,39 @@ const Contact = () => {
                 justifyContent: "center",
                 padding: "5%",
                 fontSize: "Larger",
-                color: "grey"}}>
-                <h1>Si notre présentation vous a séduit</h1>
-                <Button variant="contained" color="secondary">Contactez-nous</Button>
-                <div>
-     
-                </div>
+                color: "lightgrey"}}>
+                <h1 style={{textAlign: "center", fontSize: "60px", filter: "drop-shadow(5px 5px 2px black)", color: "grey"}}>Contact</h1>
+                <h1 style={{filter: "drop-shadow(5px 5px 2px black)"}}>Si notre présentation vous a séduit</h1>
+                <Button variant="secondary" style={{filter: "drop-shadow(5px 5px 2px black)"}} onClick={handleShow}>Contactez-nous</Button>
             </div>
+            <Modal show={show} onHide={handleClose}
+            size="md"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered>
+                    <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">Formulaire de contact</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div style={{
+                            display: "flex",
+                            flexFlow: "row wrap",
+                            justifyContent: "space-around",
+                            padding: "5%",
+                            textAlign: "center"
+                        }}>
+                            <form className={classes.root} noValidate autoComplete="off">
+                                <TextField label="Nom ou Raison Sociale" color="secondary" value={formValue.nom} name="nom" onChange={handleChange} />
+                                <TextField label="E-mail" color="secondary" color="secondary" value={formValue.mail} name="mail" onChange={handleChange} style={{marginBottom: "8%"}} />
+                                <TextArea rows={4} placeholder="Ecrire un message..." style={{border: "none"}} value={formValue.message} name="message" onChange={handleChange} />
+                                </form>
+                        </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                    <Button variant="success" onClick={handleClose}>
+                        Envoyer
+                    </Button>
+                    </Modal.Footer>
+                </Modal>
         </div>
     )
 }

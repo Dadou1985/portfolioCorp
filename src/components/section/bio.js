@@ -1,13 +1,12 @@
 import React from 'react'
 import Statue from '../../images/statue8.png'
 import Statue2 from '../../images/statue.png'
-import {Paper} from "@material-ui/core"
 import {Card} from 'react-bootstrap'
 
 
 const Bio = () => {
     return (
-        <div style={{
+        <div id="bio" style={{
             display: "flex",
             flexFlow: "column",
             height: "600px",
@@ -31,8 +30,9 @@ const Bio = () => {
                 }}>
                     <img src={Statue} alt="statue" style={{width: "50%", filter: "drop-shadow(10px 10px 2px grey)"}} />
                 <Card style={{
+                    marginRight: "2%",
+                    filter: "drop-shadow(10px 10px 2px grey)"
                     }}>
-                    <Paper elevation={10}>
                         <Card.Body style={{
                             padding: "15%",
                             textAlign: "center",
@@ -47,7 +47,6 @@ const Bio = () => {
                             <small className="text-muted">Last updated 3 mins ago</small>
                         </Card.Text>
                         </Card.Body>
-                    </Paper>
                 </Card>
                 </div>
                 <div style={{
@@ -57,10 +56,10 @@ const Bio = () => {
                 }}>
                     <img src={Statue} alt="statue" style={{width: "50%", filter: "drop-shadow(10px 10px 2px grey)"}} />
                 <Card style={{
-                    marginRight: "4%",
-                    marginLeft: "4%",
+                    filter: "drop-shadow(10px 10px 2px grey)",
+                    marginRight: "2%",
+                    marginLeft: "2%",
                     }}>
-                    <Paper elevation={10}>
                         <Card.Body style={{
                             padding: "15%",
                             textAlign: "center",
@@ -75,7 +74,6 @@ const Bio = () => {
                             <small className="text-muted">Last updated 3 mins ago</small>
                         </Card.Text>
                         </Card.Body>
-                    </Paper>
                 </Card>
                 </div>
                 <div style={{
@@ -85,8 +83,9 @@ const Bio = () => {
                 }}>
                     <img src={Statue} alt="statue" style={{width: "50%", filter: "drop-shadow(10px 10px 2px grey)"}} />
                 <Card style={{
+                    marginLeft: "2%",
+                    filter: "drop-shadow(10px 10px 2px grey)"
                     }}>
-                    <Paper elevation={10}>
                         <Card.Body style={{
                             padding: "15%",
                             textAlign: "center",
@@ -101,7 +100,6 @@ const Bio = () => {
                             <small className="text-muted">Last updated 3 mins ago</small>
                         </Card.Text>
                         </Card.Body>
-                    </Paper>
                 </Card>
                 </div>
             </div>
