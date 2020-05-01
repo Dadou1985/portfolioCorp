@@ -9,7 +9,7 @@ const Bio = () => {
         <div id="bio" style={{
             display: "flex",
             flexFlow: "column",
-            height: "600px",
+            height: "650px",
             width: "100%",
             justifyContent: "center",
             alignItems: "center",

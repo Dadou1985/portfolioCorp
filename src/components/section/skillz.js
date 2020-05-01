@@ -6,7 +6,7 @@ const Skillz = () => {
         <div id="skillz" style={{
             display: "flex",
             flexFlow: "column",
-            height: "600px",
+            height: "650px",
             padding: "2%",
             justifyContent: "space-around"
         }}>

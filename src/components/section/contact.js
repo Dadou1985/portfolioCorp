@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
 import { Input } from 'antd'
 import { navigate } from 'gatsby'
+import firebase from './firebase'
 
 
 const Contact = () => {
@@ -40,6 +41,23 @@ const Contact = () => {
 
     const { TextArea } = Input;
 
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        setFormValue("")
+        let marker = Date.now()
+        firebase.firestore().collection("messages").add({
+            name: formValue.nom, 
+            mail: formValue.mail, 
+            message: formValue.message,
+            markup: marker
+        }).then(function(docRef){
+            console.log(docRef.id)
+        }).catch(function(error){
+            console.log(error)
+        })
+        handleClose()
+    }
+
 
     return (
         <div id="contact" style={{
@@ -48,7 +66,7 @@ const Contact = () => {
             alignItems: "flex-start",
             justifyContent: "center",
             width: "100%",
-            height: "500px",
+            height: "600px",
             backgroundImage: `url(${Office})`,
             backgroundPositionY: "40%",
             backgroundPositionX: "30%"
@@ -88,7 +106,7 @@ const Contact = () => {
                         </div>
                     </Modal.Body>
                     <Modal.Footer>
-                    <Button variant="success" onClick={handleClose}>
+                    <Button variant="success" onClick={handleSubmit}>
                         Envoyer
                     </Button>
                     </Modal.Footer>

@@ -3,3 +3,11 @@
 /*{border: 1px solid black;}*/
 
 *{font-family: "CormorantGaramond";}
+
+.projet:hover{
+    filter: blur(1px);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
