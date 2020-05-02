@@ -25,8 +25,8 @@ const Navigation = () => {
                             justifyContent: "space-around",
                             width: "50%"
                         }}>
-                            <a href="#bio" className="text-secondary text-decoration-none">Biographie</a>
-                            <a href="#skillz" className="text-secondary text-decoration-none">Nomad Life</a>
+                            <a href="#bio" className="text-secondary text-decoration-none">Inspiration</a>
+                            <a href="#skillz" className="text-secondary text-decoration-none">Birth of a legend</a>
                             <a href="#motivationz" className="text-secondary text-decoration-none">Motivations</a>
                             <a href="#projet" className="text-secondary text-decoration-none">Projets et Réalisations</a>
                             <a href="#contact" className="text-secondary text-decoration-none">Contact</a>

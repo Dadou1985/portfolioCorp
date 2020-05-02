@@ -10,7 +10,7 @@ const Skillz = () => {
             padding: "2%",
             justifyContent: "space-around"
         }}>
-            <h1 style={{textAlign: "center", fontSize: "60px", filter: "drop-shadow(5px 5px 2px black)", color: "grey"}}>A Nomad's Way of Life</h1>
+            <h1 style={{textAlign: "center", fontSize: "60px", filter: "drop-shadow(5px 5px 2px black)", color: "grey"}}>Birth of a Legend</h1>
             <div style={{
                 display: "flex",
                 flexFlow: "row",
@@ -36,11 +36,9 @@ const Skillz = () => {
                             display: "flex",
                             flexFlow: "column"
                         }}>
-                            La maîtrise des langages de base tel que HTML
-                            et CSS me permettent de faire de l’intégration
-                            de bonne qualité. Je poursuis actuellement
-                            mon perfectionnement dans les technologies
-                            type JavaScript, PHP ou SQL. 
+                            La technologie actuelle est en train de changer notre rapport à l'impossible. Nous venons d'entrer
+                            dans une ère où la connaissance et l'information constitueront l'économie de demain. Un monde où les 
+                            frontières s'effondreront sous l'effet d'un simple "click". 
                         </div>
                     </div>
                     <div style={{
@@ -52,11 +50,9 @@ const Skillz = () => {
                             display: "flex",
                             flexFlow: "column"
                         }}>
-                            La maîtrise des langages de base tel que HTML
-                            et CSS me permettent de faire de l’intégration
-                            de bonne qualité. Je poursuis actuellement
-                            mon perfectionnement dans les technologies
-                            type JavaScript, PHP ou SQL.                         </div>
+                            Tous les jours, de nouveaux métiers se créent, de nouveaux services apparaissent, de nouveaux talents
+                            émergent élargissant ainsi le champs des possibilités au plus grand nombre.                       
+                        </div>
                     </div>
                     <div style={{
                         display: "flex",
@@ -67,11 +63,9 @@ const Skillz = () => {
                             display: "flex",
                             flexFlow: "column"
                         }}>
-                            La maîtrise des langages de base tel que HTML
-                            et CSS me permettent de faire de l’intégration
-                            de bonne qualité. Je poursuis actuellement
-                            mon perfectionnement dans les technologies
-                            type JavaScript, PHP ou SQL. 
+                            Un horizon d'opportunités s'offrent à ceux qui souhaitent s'emparer de leur destin pour écrire 
+                            leur propre légende. Certains deviendront explorateurs de l'espace, alchimistes quantiques ou
+                            bâtisseurs d'édifices industriels mais seuls les meilleurs d'entre eux deviendront Développeurs.
                         </div>
                     </div>
                 </div>

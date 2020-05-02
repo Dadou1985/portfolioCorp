@@ -80,7 +80,7 @@ const Contact = () => {
                 fontSize: "Larger",
                 color: "lightgrey"}}>
                 <h1 style={{textAlign: "center", fontSize: "60px", filter: "drop-shadow(5px 5px 2px black)", color: "grey"}}>Contact</h1>
-                <h1 style={{filter: "drop-shadow(5px 5px 2px black)"}}>Si notre présentation vous a séduit</h1>
+                <h1 style={{filter: "drop-shadow(5px 5px 2px black)", marginBottom: "5%"}}>Si notre présentation vous a séduit</h1>
                 <Button variant="secondary" style={{filter: "drop-shadow(5px 5px 2px black)"}} onClick={handleShow}>Contactez-nous</Button>
             </div>
             <Modal show={show} onHide={handleClose}

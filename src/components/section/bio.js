@@ -37,14 +37,12 @@ const Bio = () => {
                             padding: "15%",
                             textAlign: "center",
                         }}>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Hard Work</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                            <i>"C'est une bonne chose de s'amuser et faire la fête mais pendant que certains passent leur temps à se divertir, d'autres s'instruisent, travaillent dur et sont en train de gagner."</i>
                         </Card.Text>
                         <Card.Text>
-                            <small className="text-muted">Last updated 3 mins ago</small>
+                            <small className="text-muted">Arnold Schwarzenegger</small>
                         </Card.Text>
                         </Card.Body>
                 </Card>
@@ -61,17 +59,15 @@ const Bio = () => {
                     marginLeft: "2%",
                     }}>
                         <Card.Body style={{
-                            padding: "15%",
+                            padding: "16%",
                             textAlign: "center",
                         }}>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>The Dream Catcher</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                            <i>"Draw a line in the distance as a purpose in your life and let your dreams drive you threw the night then keep walking until your feet bleed, that's the true meaning of a Dream Catcher."</i>
                         </Card.Text>
                         <Card.Text>
-                            <small className="text-muted">Last updated 3 mins ago</small>
+                            <small className="text-muted">Someone Somewhere Someday</small>
                         </Card.Text>
                         </Card.Body>
                 </Card>
@@ -90,14 +86,12 @@ const Bio = () => {
                             padding: "15%",
                             textAlign: "center",
                         }}>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Les Bananes et l'Argent</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                            <i>“Si vous offrez travail et affaires aux gens, ils choisiront de travailler parce que la plupart des gens ne savent pas qu’une entreprise peut rapporter plus d'argent qu’un salaire.”</i>
                         </Card.Text>
                         <Card.Text>
-                            <small className="text-muted">Last updated 3 mins ago</small>
+                            <small className="text-muted">Jack Ma</small>
                         </Card.Text>
                         </Card.Body>
                 </Card>
