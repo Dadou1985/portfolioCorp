@@ -16,16 +16,13 @@ const Ambitionz = () => {
             flexFlow: "column",
             justifyContent: "center",
             padding: "8%",
-            fontSize: "larger"
+            fontSize: "large"
             }}>
                 <h2>Ambitions et Motivations</h2>
-                <p style={{}}>
-                    La maîtrise des langages de base tel que HTML
-                    et CSS me permettent de faire de l’intégration
-                    de bonne qualité. Je poursuis actuellement
-                    mon perfectionnement dans les technologies
-                    type JavaScript, PHP ou SQL.
-                    
+                <p>Quel développeur n'embrasse pas le rêve de développer un jour l'application de demain ? C'est cette ambition 
+                    qui <i>drive</i> certains d'entre nous à repousser leurs limites en veillant sans cesse à faire 
+                    évoluer leur <i>learning curve</i>. Me concernant, je n'ai jamais engrengé autant de connaissances et je n'ai 
+                    jamais été aussi motivé que lorsque je prenais part à un projet que j'aurais aimé développer moi-même.
                 </p>
             </div>
             <img src={Futur} alt="futur" style={{width: "50%",height: "100%", filter: "grayscale()"}} />
