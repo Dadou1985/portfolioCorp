@@ -4,7 +4,6 @@ import Office from '../../images/office.jpg'
 import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
 import { Input } from 'antd'
-import { navigate } from 'gatsby'
 import firebase from './firebase'
 
 
@@ -34,11 +33,7 @@ const Contact = () => {
           [event.target.name]: event.target.value
         }))
       }
-
-    const handleLink = () => {
-        return navigate("https://notel-765b1.web.app/")
-    }
-
+      
     const { TextArea } = Input;
 
     const handleSubmit = (event) => {
